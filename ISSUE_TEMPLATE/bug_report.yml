@@ -1,0 +1,42 @@
+name: 🐛 Bug 报告
+description: 脚本运行出问题了
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "## 感谢反馈！请填写以下信息"
+  - type: input
+    id: version
+    attributes:
+      label: 脚本版本
+      placeholder: 例如 5.4 Insider
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 浏览器
+      options:
+        - Chrome
+        - Edge
+        - Firefox
+        - 其他
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 发生了什么？预期是什么？
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 进入桌面模式
+        2. 打开 xxx 文件
+        3. 点击 xxx
+  - type: textarea
+    id: logs
+    attributes:
+      label: 控制台报错（如有）
+      render: shell
