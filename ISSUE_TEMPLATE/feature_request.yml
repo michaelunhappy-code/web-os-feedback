@@ -1,0 +1,11 @@
+name: 💡 功能建议
+description: 我想提个新功能
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 你的建议
+    validations:
+      required: true
